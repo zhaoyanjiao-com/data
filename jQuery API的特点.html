@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>段落一</p>
+		<p>段落2</p>
+		<p>段落3</p>
+		<span id="p1" title="第4个">第四个段落</span><br>
+		<span id="p2" title="第5个">第5个段落</span>
+		<div id="d1" title="div1">第一个div</div>
+		<div class="d2" title="div2">第二个div</div>
+		
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//修改所有文本颜色
+			//DOM方式
+			var p=document.getElementsByTagName("p");
+			for(var i=0;i<p.length;i++){
+				p[i].style.color="red";
+			}
+			//jquery方式
+			var $p=$("p");//获取所有p元素
+			$p.css("color","blue");//特点一：自动遍历
+		</script>
+	
+		<script type="text/javascript">
+			//修改文本颜色和title属性
+			//DOM方法
+			var span1=document.getElementById("p1");
+			span1.style.color="green";
+			//span1.title="hahhah";//直接修改title值
+			span1.setAttribute("title","修改后的title");
+			
+			//jquery方法
+			//第二个特点：链式操作 attr()方法修改title的值
+			$("#p2").css("color","red").attr("title","也是修改后的值");
+		</script>
+		
+		<script type="text/javascript">
+		//获取title的值 和修改title的值
+		//核心DOM方法
+		var d1=document.getElementById("d1");
+		d1.getAttribute("title");//使用getAttribute获取title的值
+		d1.setAttribute("title","修改后的div的title");//修改值
+		
+		//jQuery的方法 特点三 一个API两用(看传入时参数的个数)
+		console.log($(".d2").attr("tilte"));//获取 传入一个参数
+		$(".d2").attr("tilte","修改后的div2的title");//修改 传入二个参数
+		
+		document.write($(".d2").html());//获取div的内容
+		$(".d2").html("修改后的HTML内容");//修改div的内容
+		</script>
+		
+	</body>
+</html>
