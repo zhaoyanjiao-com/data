@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!--[if lt IE 9]>								
+		<script src="js/html5shiv.min.js"></script>		
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			.ulll {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 10px;
+			}
+
+			.ulll li {
+				display: inline-block;
+			}
+
+			.oooll {
+				font-size: 16px;
+				color: #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" style="margin: 0px;">
+			<!-- 注意：是导航条包含 容器而不是 容器包含导航条 -->
+			<div class="container-fluid" style="padding: 0;margin-left: 25px;margin-right: 25px; ">
+				<div>
+					<!-- 头部 -->
+					<div class="navbar-header">
+						<!-- LOGO -->
+						<img src="img/nav_logo.svg" style="width: 100px;height: 50px;">
+						<!-- 触发按钮 -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#zhedie">
+							<!-- data-target="#zhedie"关联折叠菜单 -->
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- 折叠菜单 -->
+					<!-- collapse 默认隐藏 -->
+					<div class="navbar-collapse collapse " id="zhedie">
+						<!-- 导航条中添加导航 -->
+						<ul class="nav navbar-nav">
+							<li><a href="">首页</a></li>
+						</ul>
+						<!-- 表单 -->
+
+						<ul class="nav navbar-nav navbar-right clearfix  oooll">
+
+							<li><a href="" class="navbar-link ">web</a></li>
+							<li><a href="" class="navbar-link ">PHP</a></li>
+							<li><a href="" class="navbar-link ">难受</a></li>
+							<li><a href="" class="navbar-link">关于我们</a></li>
+							<li><a href="" class="navbar-link ">社区</a></li>
+							<li><a href="" class="navbar-link ">文献资料</a></li>
+							<li><a href="" class="navbar-link ">NBViewer</a></li>
+							<li><a href="" class="navbar-link hidden-sm">博客</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主题 -->
+		<div class="container-fluid" style="padding: 0;">
+			<!-- 第一张图片 -->
+			<div class="row" style="border-bottom: 2px solid #777777; margin: 0px;">
+				<div class="col-md-12 text-center hidden-xs" style="padding: 0;">
+					<img src="img/3.png" style="width: 90%;">
+					<div class="carousel-caption" style="padding: 0; color: #000000;">
+						Jupyter项目的存在是为了开发跨多种编程语言的交互式计算的开源软件，开放标准和服务。
+					</div>
+				</div>
+			</div>
+		
+			<!-- 简介 -->
+			<div class="row" style="padding: 0; margin: 0; padding-top: 30px; padding-bottom: 30px; background-color: #F5F5F5; border-bottom: 2px solid #000000;">
+				<div class="col-sm-6 text-center" style="margin-top: 20px;">
+					<img src="img/12.png" style="width: 80%;">
+				</div>
+				<div class="col-sm-6 text-center" style="margin-top: 60px;">
+					<h3 class="text-left" style="margin-bottom: 20px;">Jupyter笔记</h3>
+					<p class="text-left">
+						Jupyter Notebook是一个开源Web应用程序，允许您创建和共享包含实时代码，方程式，可视化效果和叙述文本的文档。用途包括：
+						数据清理和转换，数值模拟，统计模型，数据可视化，机器学习等。</p>
+					<div class="row">
+						<div class="col-xs-6 text-center">
+							<button type="button" class="btn btn-warning btn-lg">在浏览器中尝试</button>
+						</div>
+						<div class="col-xs-6 text-center">
+							<button type="button" class="btn btn-warning btn-lg">安装JupyterLab</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 简介 -->
+			<div class="row" style="padding: 0; margin: 0; padding-top: 30px; padding-bottom: 30px; border-bottom: 2px solid #000000;">
+				<div class="col-sm-6 text-center" style="margin-top: 20px;">
+					<img src="img/31.png" style="width: 80%;">
+				</div>
+				<div class="col-sm-6 text-center" style="margin-top: 60px;">
+					<h3 class="text-left" style="margin-bottom: 20px;">JupyterLab 1.0：Jupyter的下一代笔记本电脑界面</h3>
+					<p class="text-left">
+						JupyterLab是用于Jupyter笔记本，代码和数据的基于Web的交互式开发环境。JupyterLab非常灵活：
+						配置和安排用户界面以支持数据科学，科学计算和机器学习中的各种工作流程。JupyterLab是可扩展的和模块化的：编写可添加新组件并与现有组件集成的插件。</p>
+					<div class="row">
+						<div class="col-xs-6 text-center">
+							<button type="button" class="btn btn-warning btn-lg">在浏览器中尝试</button>
+						</div>
+						<div class="col-xs-6 text-center">
+							<button type="button" class="btn btn-warning btn-lg">安装JupyterLab</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 4个小图标 -->
+			<div class="row" style="padding-top: 20px; margin: 0 10px;">
+				<div class="col-sm-3 text-center">
+					<img src="img/language.svg">
+					<h4 style="padding-bottom: 20px;">选择语言</h4>
+					<p>
+						Jupyter支持40多种编程语言，包括Python，R，Julia和Scala。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/share.svg">
+					<h4 style="padding-bottom: 20px;">共享笔记本</h4>
+					<p>
+						可以使用电子邮件，Dropbox，GitHub和Jupyter Notebook Viewer与其他人共享笔记本。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/widget.svg">
+					<h4 style="padding-bottom: 20px;">互动输出</h4>
+					<p>
+						您的代码可以产生丰富的交互式输出：HTML，图像，视频，LaTeX和自定义MIME类型。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/spark.svg">
+					<h4 style="padding-bottom: 20px;">大数据整合</h4>
+					<p>
+						利用Python，R和Scala的大数据工具，例如Apache Spark。使用pandas，scikit-learn，ggplot2，TensorFlow探索相同的数据。
+					</p>
+				</div>
+			</div>
+			<div class="row" style="background-color: #F5F5F5; margin-top: 20px; margin: 0;">
+				<div class="col-md-6 text-center col-md-offset-3" style="margin-top: 20px;">
+					<input type="image" src="img/main-logo.svg" style="width: 90%; height: 150px;" />
+					<p>用户进程并简化软件安装。一的软件管理和数据访问。</p>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 20px; background-color: #F5F5F5; margin: 0 10px;">
+				<div class="col-sm-3 text-center">
+					<img src="img/authentication.svg">
+					<h4 style="padding-bottom: 20px;">可插拔认证</h4>
+					<p>
+						使用PAM，OAuth管理用户和身份验证，或者与您自己的目录服务系统集成。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/container.svg">
+					<h4 style="padding-bottom: 20px;">容器友好</h4>
+					<p>
+						使用Docker和Kubernetes扩展您的部署，隔离用户进程并简化软件安装。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/central.svg">
+					<h4 style="padding-bottom: 20px;">集中部署</h4>
+					<p>
+						在场内或场外的集中式基础架构上，将Jupyter Notebook部署到组织中的数千个用户。
+					</p>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="img/data.svg">
+					<h4 style="padding-bottom: 20px;">代码符合数据</h4>
+					<p>
+						在数据旁边部署Notebook，以在组织内提供统一的软件管理和数据访问。
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="container-fluid" style="padding-top: 20px; background-color: #8D8D8D;">
+			<div class="row">
+				<div class="col-xs-6">
+					<ul class="ulll">
+						<li>家</li>
+						<li>|</li>
+						<li>安装</li>
+						<li>|</li>
+						<li>关于我们</li>
+						<li>|</li>
+						<li>社区</li>
+						<li>|</li>
+						<li>文献资料</li>
+						<li>|</li>
+						<li>NBViewer</li>
+						<li>|</li>
+						<li>博客</li>
+					</ul>
+					<p>版权所有©2020 Project Jupyter-2020年5月16日星期六最新更新</p>
+					<p>Jupyter商标已在美国专利商标局注册。</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<button type="button" class="btn btn-warning glyphicon glyphicon-tree-conifer">关注@Jupyter</button>
+					<p>跟随@ProjectJupyter</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+			(function() {
+				var s = document.createElement("script");
+				s.onload = function() {
+					bootlint.showLintReportForCurrentDocument([]);
+				};
+				s.src = "js/bootlint.js";
+				document.body.appendChild(s)
+			})();
+		</script>
+	</body>
+</html>
